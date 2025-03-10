@@ -14,7 +14,7 @@ submit_btn = st.button("Save")
 
 # Save note when button is clicked
 if submit_btn and note:
-    st.session_state.notes.append({"note": note, "version": version, "date": date})
+    st.session_state.notes.append({"note": note, "date": date})
 
 st.write("### Saved Notes:")
 for i, saved_note in enumerate(st.session_state.notes, 1):
